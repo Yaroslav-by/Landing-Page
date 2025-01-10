@@ -9,7 +9,10 @@ body {
 .header-links,
 .header-logo,
 .main-container,
-.placeholder-image {
+.placeholder-image,
+.information-container,
+.information,
+.item {
     display: flex;
 }
 
@@ -53,7 +56,9 @@ body {
 }
 
 .title-text,
-.placeholder-image {
+.placeholder-image,
+.item-text,
+.item-img {
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -84,4 +89,51 @@ body {
 .title-button:hover {
     box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.12), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
   }
+
+.information-container {
+    padding: 48px 400px 70px 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.information {
+    gap: 84px;
+    flex-wrap: wrap;
+}
+
+.information-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    width: 152px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.img-border-container {
+    width: 152px;
+    height: 152px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 16px;
+    border-width: 3px;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-text,
+.item-img {
+    text-align: center;
+    color: #1F2937;
+}
+
 
